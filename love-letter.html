@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thư gửi em</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .letter-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .top-center-text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .top-center-text h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color: #ff4b6e;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .content h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #ff758c;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(255, 118, 140, 0.2) 0%, rgba(255, 118, 140, 0.2) 100%);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .emphasis {
+            color: #ff4b6e;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer a {
+            color: #ff758c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #ff4b6e;
+        }
+
+        /* Hiệu ứng trái tim nền */
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 75, 110, 0.1);
+            transform: rotate(45deg);
+            animation: heartFloat 15s ease-in infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 75, 110, 0.1);
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            left: -5px;
+        }
+
+        .heart:after {
+            top: -5px;
+        }
+
+        @keyframes heartFloat {
+            0% {
+                transform: rotate(45deg) translateY(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: rotate(45deg) translateY(-1000px);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .letter-container {
+                padding: 20px;
+            }
+            
+            .top-center-text h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="hearts">
+            <!-- Hearts will be added by JavaScript -->
+        </div>
+        <div class="top-center-text">
+            <h1>Đêm hôm ấy, trái tim anh đã loạn nhịp.</h1>
+        </div>
+        
+        <div class="content">
+            <h2>Nhớ lại ngày này tháng trước...</h2>
+            <p>
+                Nhớ ngày này tháng trước là lúc anh gặp em ở Asiana. Uầy! Kiểu không biết diễn tả sao luôn ấy! Anh của trước đó trong đầu chỉ có suy nghĩ là <span class="highlight">tập trung đi học, đi làm, đi tập thể dục</span> thôi, chứ không suy nghĩ gì đến yêu đương nữa.
+            </p>
+            <p>
+                Cho đến khi gặp em, anh kiểu... <span class="emphasis">Ủa? Người gì mà lạ lùng thế nhỉ??? Sao mà lạ lùng quá vậy???</span> Từ đó trong đầu anh đã suy nghĩ rất nhiều về em, suy nghĩ tích cực và cũng có suy nghĩ tiêu cực, đủ loại gia vị!
+            </p>
+            <p>
+                Rồi thời gian nó cứ thế, thoáng cái 2 tụi mình cũng biết nhau được 2 tháng rồi. Đúng là quá trời nhanh. À, anh vẫn chưa nói thay đổi của anh sau khi gặp em, thật sự thì ngồi viết những dòng này là anh nghĩ gì nói đó, nên câu từ nó có hơi lộn xộn chút.
+            </p>
+            <p>
+                Sau khi gặp em thì ngoài những cái em đã biết, suy nghĩ trong anh đã có phần thay đổi nhiều lắm! Anh biết chăm sóc bản thân hơn, có thêm động lực để cố gắng, rồi bức tranh tương lai mà anh tưởng tượng, trong đó có em, <span class="highlight">đẹp lắm!</span>
+            </p>
+            <p>
+                Nói thì ngắn gọn vậy thôi, chứ cái quá trình nó diễn ra cũng dữ dằn lắm á nha. Nói tới đây thôi, để dành khi khác anh sẽ nói tiếp, mong rằng tương lai sẽ có nhiều dịp để anh ngồi đây viết lách rồi gửi cho em!
+            </p>
+        </div>
+        
+        <div class="footer">
+            <a href="#">Trở về đầu trang</a>
+        </div>
+    </div>
+
+    <script>
+        // Tạo hiệu ứng trái tim nền
+        function createHearts() {
+            const heartsContainer = document.querySelector('.hearts');
+            const numberOfHearts = 15;
+            
+            for (let i = 0; i < numberOfHearts; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDelay = Math.random() * 15 + 's';
+                heart.style.opacity = Math.random();
+                heartsContainer.appendChild(heart);
+            }
+        }
+
+        // Chạy animation khi trang load
+        document.addEventListener('DOMContentLoaded', createHearts);
+
+        // Smooth scroll cho nút "Trở về đầu trang"
+        document.querySelector('.footer a').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
